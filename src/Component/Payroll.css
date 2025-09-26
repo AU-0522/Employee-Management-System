@@ -1,0 +1,123 @@
+/* Reset some basic styles */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Ensure the component takes up the full page */
+.payroll {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 1800px;
+  padding: 20px;
+  background-color: #f0f2f5;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.salary-slip {
+  width: 80%;
+  height: 100%;
+  max-width: 100%;
+  background-color: #1E1E36;  
+  padding: 30px;
+  overflow-y: auto;
+  color: white;
+}
+
+/* Container for sections to manage spacing */
+.details-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.section {
+  flex: 1;
+  margin-right: 15px;
+}
+
+.section:last-child {
+  margin-right: 0;
+}
+
+/* Align label and input field side by side and in column alignment */
+.form-group {
+  display: flex;
+  align-items: center; /* Vertically align items within each form group */
+  margin-bottom: 15px; /* Space between form groups */
+  justify-content: space-between; /* Align items within the form group */
+}
+
+/* Space between the label and input field */
+.form-group label {
+  margin-right: 10px; /* Reduced space between label and input field */
+  color: #ddd; /* Light color for labels to contrast with dark background */
+  white-space: nowrap; /* Prevent label from wrapping */
+}
+
+/* Input field styling */
+.form-group input {
+  padding: 8px; /* Padding inside the input field */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ccc; /* Background for input fields */
+  color: black; /* Text color inside the input fields */
+  width: 200px; /* Fixed width for input fields */
+  text-align: center; /* Center text inside input fields */
+}
+
+/* Specific styling for different sections */
+.employee-details .form-group,
+.bank-details .form-group,
+.earnings .form-group,
+.deductions .form-group,
+.total .form-group {
+  margin-bottom: 20px; /* Space between form groups in each section */
+}
+
+/* Table styles */
+.work-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.work-details-table th,
+.work-details-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.work-details-table th {
+  background-color: #1E1E36;
+  font-weight: bold;
+  color: white; /* Ensure table header text is visible */
+}
+.submit-button {
+  margin: 20px auto 0 auto; /* Top margin 20px, left and right auto */
+  width: 10%; /* Set the desired width of the button */
+}
+
+.submit-button button {
+  padding: 5px 10px; /* Reduced padding */
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px; /* Reduced font size */
+  width: 100%; /* Make the button take up the full width of the container */
+}
+
+.submit-button button:hover {
+  background-color: blue;
+}

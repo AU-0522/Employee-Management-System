@@ -1,0 +1,123 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1c32;
+  }
+  
+  .employee-form {
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #f7f7f5;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #1f1f38, #1c1c32);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .employee-form:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .employee-form h1 {
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* Style adjustments for form rows */
+  .form-row-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  
+  .form-row {
+    flex: 1;
+    margin-bottom: 8px;
+    position: relative;
+  }
+  
+  .form-row input,
+  .form-row select,
+  .form-row textarea {
+    width: 100%;
+    padding: 6px 12px;
+    border: none;
+    border-bottom: 1px solid #d3d3d3;
+    background: transparent;
+    font-size: 0.9rem;
+    color: #f4f3f3af;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  .form-row input::placeholder,
+  .form-row select::placeholder,
+  .form-row textarea::placeholder {
+    color: #a8a8a8;
+  }
+  
+  .form-row input:focus,
+  .form-row select:focus,
+  .form-row textarea:focus {
+    outline: none;
+    border-color: #666;
+  }
+  
+  .form-row textarea {
+    resize: vertical;
+  }
+  
+  .photo-upload-inline {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .photo-preview img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 8px;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #0a0a0a;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .success-message {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #4caf50;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

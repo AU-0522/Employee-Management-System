@@ -1,0 +1,126 @@
+.container {
+  max-width: 1500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ffd700;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #1f1f38, #1c1c32);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 2rem;
+  color: #ffffff;
+  animation: fadeIn 1s ease-out;
+}
+
+.search-input {
+  width: 30%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  background: #f4f3f3;
+  color: #1c1c32;
+  font-size: 1rem;
+}
+
+.search-input:focus {
+  outline: none;
+  border: 1px solid #000000;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-header {
+  background-color: #1c1c32;
+  color: #ffffff;
+  padding: 10px;
+  text-align: left;
+}
+
+.table-data {
+  background-color: #1c1c32;
+  color: #ffffff;
+  padding: 10px;
+  border: 1px solid #d3d3d3;
+}
+
+/* Minimize column widths */
+.table-header:nth-child(2),
+.table-data:nth-child(2) { /* Emp Code */
+  width: 50px;
+}
+.table-header:nth-child(6),
+.table-data:nth-child(6) { /* Blood Group */
+  width: 10px;
+}
+
+.table-header:nth-child(9),
+.table-data:nth-child(9) { /* Blood Group */
+  width: 10px;
+}
+
+.table-header:nth-child(11),
+.table-data:nth-child(11) { /* Employee Status */
+  width: 10px;
+}
+
+.table-header:nth-child(13),
+.table-data:nth-child(13) { /* Employee Status */
+  width: 20px;
+}
+
+.employee-photo {
+  width: 50px;
+  height: 50px;
+}
+
+.button {
+  padding: 8px 12px;
+  background-color: #02b136;
+  color: #1c1c32;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #dac50d;
+}
+
+/* Specific style for delete button */
+.delete-button {
+  background-color: #ff4c4c; /* Red color */
+  color: #ffffff;
+}
+
+.delete-button:hover {
+  background-color: #e63946; /* Darker red for hover */
+}
+
+/* Animation for header */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

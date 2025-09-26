@@ -1,0 +1,68 @@
+.subadmin-container {
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #343a40;
+  color: white;
+  padding: 1rem;
+  transition: width 0.3s ease;
+}
+
+.sidebar.collapsed {
+  width: 80px;
+}
+
+.sidebar img {
+  width: 70px;
+  height: 70px;
+}
+
+.collapse-button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ddd;
+  padding: 0;
+}
+
+.menu {
+  margin-top: 1rem;
+}
+
+.menu-item {
+  margin-bottom: 1rem;
+}
+
+.menu-item button {
+  width: 100%;
+  text-align: left;
+}
+
+.main-content {
+  flex-grow: 1;
+  background-image: url("WCU.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.7); /* White background with 50% opacity */
+  background-blend-mode: overlay; /* To mix the image with the white background */
+}
+
+.search-form {
+  width: 60%;
+}
+
+.search-button {
+  width: 70px;
+}
+
+.logout-button {
+  width: 70px;
+}

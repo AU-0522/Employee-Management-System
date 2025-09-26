@@ -1,0 +1,121 @@
+.container {
+    max-width: 1500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ffd700;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #1f1f38, #1c1c32);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 0.9rem;
+    color: #ffffff;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .headerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .datePickerContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .label {
+    color: #ffd700;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .search-input {
+    border: 1px solid #ffd700;
+    border-radius: 8px;
+    padding: 8px;
+    background: #2e2e44;
+    color: #ffffff;
+    margin: 5px 0;
+    width: 100%;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-input:focus {
+    border-color: #ffffff;
+    outline: none;
+  }
+  
+  .button {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  .button:active {
+    transform: scale(1);
+  }
+  
+  .formContainer {
+    background: #1c1c32;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tableContainer {
+    margin-top: 20px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-header {
+    background: #ffd700;
+    color: #1c1c32;
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ffd700;
+  }
+  
+  .table-data {
+    padding: 10px;
+    color: #ffffff;
+    border: 1px solid #333;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
